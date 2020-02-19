@@ -17,6 +17,10 @@ async def play_nim(ctx):
 async def coinflip(ctx):
     await ctx.send(random.choice(["heads", "tails"]))
 
+@bot.command(name="average")
+async def average(ctx, a, b):
+    await ctx.send( (a+b)/2)
+
 bot.run(token)
 
 #allison
